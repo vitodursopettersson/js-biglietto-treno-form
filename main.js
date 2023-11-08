@@ -24,6 +24,7 @@ const ageRange = document.getElementById('age-range');
 
 // Variabili button
 const createTicket = document.getElementById('create-ticket');
+const clearTicket = document.getElementById('clear-ticket');
 
 //Calcolo del biglietto
 createTicket.addEventListener('click', function () {
@@ -52,3 +53,14 @@ createTicket.addEventListener('click', function () {
     elementTicketPrice.innerHTML = ticketPrice + "€"
 });
 
+// Annulla
+clearTicket.addEventListener('click', function () {
+
+    fullName.value = null;
+    kmTrip.value = null;
+    ageRange.value = null;
+    elementTicketName.innerHTML = null;
+    elementTicketType.innerHTML = null;
+    elementTicketPrice.innerHTML = null;
+
+})
