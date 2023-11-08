@@ -16,7 +16,6 @@ const elementTicketName = document.getElementById('ticket__name');
 const elementTicketType = document.getElementById('ticket__type');
 const elementTicketPrice = document.getElementById('ticket__price');
 
-
 // Variabili input
 const fullName = document.getElementById('full-name');
 const kmTrip = document.getElementById('km-trip');
@@ -25,6 +24,9 @@ const ageRange = document.getElementById('age-range');
 // Variabili button
 const createTicket = document.getElementById('create-ticket');
 const clearTicket = document.getElementById('clear-ticket');
+
+// Variabile Card Biglietto
+const containerTicketInfo = document.getElementById('ticket-info');
 
 //Calcolo del biglietto
 createTicket.addEventListener('click', function () {
@@ -51,6 +53,8 @@ createTicket.addEventListener('click', function () {
     elementTicketName.innerHTML = fullName.value;
     elementTicketType.innerHTML = ticketType
     elementTicketPrice.innerHTML = ticketPrice + "€"
+    containerTicketInfo.classList.remove('visually-hidden')
+
 });
 
 // Annulla
@@ -62,5 +66,6 @@ clearTicket.addEventListener('click', function () {
     elementTicketName.innerHTML = null;
     elementTicketType.innerHTML = null;
     elementTicketPrice.innerHTML = null;
+    containerTicketInfo.classList.add('visually-hidden')
 
 })

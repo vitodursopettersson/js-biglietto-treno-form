@@ -1,0 +1,17 @@
+:root {
+    --main-color: #B91E50;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+/* Header */
+
+.vdu-button {
+    background-color: var(--main-color);
+}
+
+.vdu-button:hover {
+    background-color: #a51a47;
+}
