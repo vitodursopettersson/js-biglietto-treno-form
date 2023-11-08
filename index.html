@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo del prezzo del biglietto del treno</title>
+</head>
+
+<body>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Form -->
+        <div>
+
+            <!-- Nome Cognome -->
+            <label for="fullname">Nome Cognome</label>
+            <input type="text" id="full-name">
+
+            <!-- Km -->
+            <label for="km-trip">Km da percorrere</label>
+            <input type="number" id="km-trip">
+
+            <!-- Età -->
+            <label for="age-range">Fascia d'età</label>
+            <select name="age" id="age-range">
+                <option value="minorenne">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+
+            <!-- Submit -->
+            <input type="submit" value="Genera" id="create-ticket">
+
+        </div>
+
+    </main>
+
+    <!-- Link Javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
