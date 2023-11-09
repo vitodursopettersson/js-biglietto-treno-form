@@ -61,35 +61,37 @@
                     <!-- Titolo -->
                     <h5 class="card-title mb-4">Calcola il prezzo del tuo biglietto</h5>
 
-                    <form>
 
-                        <!-- Nome Cognome -->
-                        <div class="mb-3">
-                            <label for="full-name" class="form-label">Nome completo</label>
-                            <input type="text" class="form-control" id="full-name">
-                        </div>
 
-                        <!-- Km -->
-                        <label for="km-trip" class="form-label">Km da percorrere</label>
-                        <div class="input-group mb-3">
-                            <input type="number" class="form-control" id="km-trip">
-                            <span class="input-group-text" id="basic-addon2">km</span>
-                        </div>
+                    <!-- Nome Cognome -->
+                    <div class="mb-3">
+                        <label for="full-name" class="form-label">Nome completo</label>
+                        <input type="text" class="form-control" id="full-name">
+                    </div>
 
-                        <!-- Età -->
-                        <label for="age-range" class="form-label">Fascia d'età</label>
-                        <select class="form-select mb-5" id="age-range">
-                            <option selected>Seleziona la tua fascia d'età</option>
-                            <option value="minorenne">Minorenne</option>
-                            <option value="maggiorenne">Dai 18 ai 65 anni</option>
-                            <option value="over65">Over 65</option>
-                        </select>
+                    <!-- Km -->
+                    <label for="km-trip" class="form-label">Km da percorrere</label>
+                    <div class="input-group mb-3">
+                        <input type="number" class="form-control" id="km-trip">
+                        <span class="input-group-text" id="basic-addon2">km</span>
+                    </div>
 
-                        <!-- Button -->
-                        <button id="create-ticket" type="submit" class="btn text-white vdu-button me-2">Genera</button>
+                    <!-- Età -->
+                    <label for="age-range" class="form-label">Fascia d'età</label>
+                    <select class="form-select mb-5" id="age-range">
+                        <option selected>Seleziona la tua fascia d'età</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Dai 18 ai 65 anni</option>
+                        <option value="over65">Over 65</option>
+                    </select>
+
+                    <!-- Button -->
+                    <div class="flex">
+                        <button id="create-ticket" class="btn text-white vdu-button me-2">Genera</button>
                         <button id="clear-ticket" class="btn btn-outline-danger">Annulla</button>
+                    </div>
 
-                    </form>
+
 
                 </div>
 

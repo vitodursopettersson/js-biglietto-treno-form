@@ -52,7 +52,7 @@ createTicket.addEventListener('click', function () {
     // Generazione del biglietto
     elementTicketName.innerHTML = fullName.value;
     elementTicketType.innerHTML = ticketType
-    elementTicketPrice.innerHTML = ticketPrice + "€"
+    elementTicketPrice.innerHTML = ticketPrice.toFixed(2) + "€"
     containerTicketInfo.classList.remove('visually-hidden')
 
 });
